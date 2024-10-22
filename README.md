@@ -1,1 +1,1 @@
-Sito per Simone Galassi, vedi https://simplyhorses.it/
+Sito per Simply Horses, vedi https://simplyhorses.it/
