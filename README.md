@@ -1,1 +1,1 @@
-# simplyhorses.it
+Sito per Simone Galassi, vedi https://simplyhorses.it/
