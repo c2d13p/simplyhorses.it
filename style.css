@@ -1,5 +1,230 @@
+@import url('https://fonts.googleapis.com/css?family=KoHo:100,200,300,400,500,600,700&display=swap');
+
 html, body {
     margin: 0;
     padding: 0;
     background-color: #E7B4B5;
+    font-family: 'Koho', sans-serif;
+    overflow-x: hidden;
+}
+
+.header {
+    height: 44vh;
+    background-image: url('home/white-horse-icons.png');
+    background-repeat: repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.logo {
+    max-width: 50%;
+    max-height: 72%;
+    object-fit: contain;
+}
+
+.section-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    position: relative;
+    padding: 2rem 0rem;
+}
+
+.text-box-section-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.text-box-section-1 p {
+    color: white;
+    text-align: left;
+    font-size: 4.5em;
+    font-weight: 700;
+    margin: 0;
+    border: 8px solid white;
+    padding: 3rem;
+    transform: translateX(10%);
+}
+
+.img-section-1 {
+    max-height: 90%;
+    max-width: 90%;
+    position: relative;
+    z-index: 0;
+}
+
+.footer {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #1d4c60;
+}
+
+.footer p {
+    font-size: 1.6em;
+    font-weight: 500;
+    color: white;
+    margin: 0;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 1rem;
+}
+
+.footer-icons a img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.footer-icons a img:hover {
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width: 1023px) {
+    .header {
+        height: 26vh;
+        background-size: 180vh auto;
+    }
+
+    .logo {
+        max-width: 100%;
+        max-height: 80%;
+        background-size: 10px;
+    }
+
+    .section-1 {
+        height: 70vh;
+        padding: 1.4rem 0rem;
+    }
+    
+    .text-box-section-1 p {
+        font-size: 2.6em;
+        font-weight: 700;
+        border-width: 6px;
+        padding: 2rem;
+        transform: translateX(20%);
+    }
+
+    .img-section-1 {
+        max-height: 80%;
+        max-width: 80%;
+    }
+
+    .footer {
+        height: 18vh;
+    }
+    
+    .footer p {
+        font-size: 1.4em;
+    }
+    
+    .footer-icons {
+        gap: 30px;
+        margin-top: 1rem;
+    }
+    
+    .footer-icons a img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .header {
+        height: 14vh;
+        background-size: 90vh auto;
+    }
+
+    .logo {
+        max-width: 60%;
+        max-height: 100%;
+        background-size: 10px;
+    }
+/*
+    .section-1 {
+        height: 50vh;
+        padding: 0rem 0rem;
+    }
+    
+    .text-box-section-1 p {
+        font-size: 1em;
+        font-weight: 700;
+        border: 2px solid white;
+        padding: 2rem;
+        transform: translateX(10%);
+    }
+
+    .img-section-1 {
+        max-height: 90%;
+        max-width: 90%;
+    }
+*/
+
+    .section-1 {
+        flex-direction: column;
+        position: relative;
+        height: 50vh;
+        padding: 0; 
+    }
+
+    .img-section-1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        max-width: none;
+        max-height: none;
+        object-fit: cover;
+    }
+
+    .text-box-section-1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .text-box-section-1 p {
+        font-size: 1.8em;
+        padding: 2.2rem;
+        transform: none;
+        border-width: 4px;
+        text-align: center;
+        line-height: 1.6;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .footer {
+        height: 14vh;
+    }
+    
+    .footer p {
+        font-size: 1em;
+    }
+    
+    .footer-icons {
+        gap: 20px;
+        margin-top: 0.4rem;
+    }
+    
+    .footer-icons a img {
+        width: 30px;
+        height: 30px;
+    }
 }
