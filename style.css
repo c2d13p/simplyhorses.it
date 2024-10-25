@@ -60,6 +60,75 @@ html, body {
     z-index: 0;
 }
 
+.section-2 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 80vh;
+}
+
+.column {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.column-left-section-2 {
+    width: 45%;
+    background-image: url('home/white-horse-vertical-icons.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-section-2 {
+    max-width: 75%;
+    transform: translateX(10%);
+}
+
+.column-right-section-2 {
+    width: 55%;
+    background-image: url('home/background-img-section-2.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-box-section-2 {
+    max-width: 80%;
+    text-align: left;
+    transform: translateX(-50%);
+    color: #ffffff;
+}
+
+.text-box-section-2 h2 {
+    font-size: 4.4rem;
+    line-height: 1;
+    font-weight: 700;
+    margin: 1.4rem 0rem;
+}
+
+.text-box-section-2 p {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    font-weight: 500;
+    margin: 1.4rem 0rem;
+}
+
+.text-box-section-2 button {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.text-box-section-2 button:hover {
+    background-color: #ffffff;
+    color: #1d4c60;
+}
+
 .footer {
     height: 20vh;
     display: flex;
@@ -124,6 +193,50 @@ html, body {
         max-width: 80%;
     }
 
+    .section-2 {
+        height: auto;
+        min-height: 80vh;
+    }
+
+    .column-left-section-2 {
+        width: 100%;
+        height: auto;
+        padding: 2rem 0rem;
+    }
+    
+    .img-section-2 {
+        max-width: 80%;
+        transform: translateY(0%);
+    }
+    
+    .column-right-section-2 {
+        width: 100%;
+        height: auto;
+        padding: 6rem 0rem;
+    }
+    
+    .text-box-section-2 {
+        max-width: 90%;        
+        transform: translateX(-40%);
+    }
+    
+    .text-box-section-2 h2 {
+        font-size: 2.8rem;
+        line-height: 1;
+        margin: 1.4rem 0rem;
+    }
+    
+    .text-box-section-2 p {
+        font-size: 1.2rem;
+        line-height: 1.4;
+        margin: 1.4rem 0rem;
+    }
+    
+    .text-box-section-2 button {
+        border-width: 2px;
+        font-size: 1.2em;
+    }
+
     .footer {
         height: 18vh;
     }
@@ -154,25 +267,6 @@ html, body {
         max-height: 100%;
         background-size: 10px;
     }
-/*
-    .section-1 {
-        height: 50vh;
-        padding: 0rem 0rem;
-    }
-    
-    .text-box-section-1 p {
-        font-size: 1em;
-        font-weight: 700;
-        border: 2px solid white;
-        padding: 2rem;
-        transform: translateX(10%);
-    }
-
-    .img-section-1 {
-        max-height: 90%;
-        max-width: 90%;
-    }
-*/
 
     .section-1 {
         flex-direction: column;
@@ -208,6 +302,51 @@ html, body {
         line-height: 1.6;
         width: 100%;
         box-sizing: border-box;
+    }
+
+    .section-2 {
+        height: auto;
+        min-height: 50vh;
+    }
+
+    .column-left-section-2 {
+        width: 100%;
+        height: auto;
+        padding: 2rem;
+    }
+    
+    .img-section-2 {
+        max-width: 100%;
+        transform: translateY(5%);
+    }
+    
+    .column-right-section-2 {
+        width: 100%;
+        height: auto;
+        padding: 2rem 0rem;
+    }
+    
+    .text-box-section-2 {
+        max-width: 90%;        
+        transform: translateX(0%);
+    }
+    
+    .text-box-section-2 h2 {
+        font-size: 2.4rem;
+        line-height: 1;
+        margin: 1rem 0rem;
+    }
+    
+    .text-box-section-2 p {
+        font-size: 1rem;
+        line-height: 1.4;
+        margin: 1rem 0rem;
+    }
+    
+    .text-box-section-2 button {
+        padding: 10px 20px;
+        border-width: 2px;
+        font-size: 1rem;
     }
 
     .footer {
