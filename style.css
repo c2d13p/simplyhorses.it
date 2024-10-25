@@ -129,6 +129,169 @@ html, body {
     color: #1d4c60;
 }
 
+.section-3 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 80vh;
+}
+
+.column {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.column-left-section-3 {
+    width: 55%;
+    background-color: #1d4c60;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-section-3 {
+    max-width: 80%;
+    transform: translateX(5%);
+}
+
+.column-right-section-3 {
+    width: 45%;
+    background-color: #E7B4B5;
+    background-image: url('home/white-horse-icons.png');
+    background-size: 130vh auto;
+    background-position: top;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-box-section-3 {
+    max-width: 80%;
+    text-align: left;
+    transform: translateX(-50%);
+    color: #1d4c60;
+}
+
+.text-box-section-3 h2 {
+    font-size: 4.4rem;
+    line-height: 1;
+    font-weight: 700;
+    margin: 1.4rem 0rem;
+}
+
+.text-box-section-3 p {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    font-weight: 500;
+    margin: 1.4rem 0rem;
+}
+
+.text-box-section-3 button {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid #1d4c60;
+    color: #1d4c60;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.text-box-section-3 button:hover {
+    background-color: #1d4c60;
+    color: #ffffff;
+}
+
+.section-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.section-4 img {
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.section-5 {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 60vh;
+    margin-bottom: 0;
+}
+
+.column {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.column-right-section-5 {
+    width: 45%;
+    background-color: #1d4c60;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-section-5 {
+    max-width: 85%;
+    max-height: 85%;
+    padding: 3rem;
+    transform: translateX(0%);
+}
+
+.column-left-section-5 {
+    width: 55%;
+    background-color: #E7B4B5;
+    background-image: url('home/white-horse-icons.png');
+    background-size: 150vh auto;
+    background-position: top;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-box-section-5 {
+    max-width: 80%;
+    text-align: left;
+    transform: translateX(-50%);
+    color: #1d4c60;
+}
+
+.text-box-section-5 h2 {
+    font-size: 4.4rem;
+    line-height: 1;
+    font-weight: 700;
+    margin: 1.4rem 0rem;
+}
+
+.text-box-section-5 p {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    font-weight: 500;
+    margin: 1.4rem 0rem;
+}
+
+.text-box-section-5 button {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid #1d4c60;
+    color: #1d4c60;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.text-box-section-5 button:hover {
+    background-color: #1d4c60;
+    color: #ffffff;
+}
+
 .footer {
     height: 20vh;
     display: flex;
@@ -235,6 +398,61 @@ html, body {
     .text-box-section-2 button {
         border-width: 2px;
         font-size: 1.2em;
+    }
+
+    .section-3 {
+        height: auto;
+        min-height: 80vh;
+    }
+
+    .column-left-section-3 {
+        width: 100%;
+        height: auto;
+        padding: 2rem 0rem;
+    }
+    
+    .img-section-3 {
+        max-width: 80%;
+        transform: translateY(0%);
+    }
+    
+    .column-right-section-3 {
+        width: 100%;
+        height: auto;
+        padding: 4rem 0rem;
+        background-size: 120vh auto;
+        background-position: top;
+    }
+    
+    .text-box-section-3 {
+        max-width: 90%;        
+        transform: translateX(0%);
+    }
+    
+    .text-box-section-3 h2 {
+        font-size: 2.8rem;
+        line-height: 1;
+        margin: 1.4rem 0rem;
+    }
+    
+    .text-box-section-3 p {
+        font-size: 1.2rem;
+        line-height: 1.4;
+        margin: 1.4rem 0rem;
+    }
+    
+    .text-box-section-3 button {
+        border-width: 2px;
+        font-size: 1.2em;
+    }
+
+    .section-4 {
+        height: 80vh;
+    }
+    
+    .section-4 img {
+        width: 100%;
+        height: 100%;
     }
 
     .footer {
@@ -344,6 +562,109 @@ html, body {
     }
     
     .text-box-section-2 button {
+        padding: 10px 20px;
+        border-width: 2px;
+        font-size: 1rem;
+    }
+
+    .section-3 {
+        height: auto;
+        min-height: 50vh;
+    }
+
+    .column-left-section-3 {
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+    }
+    
+    .img-section-3 {
+        max-width: 100%;
+        transform: translateY(0%);
+    }
+    
+    .column-right-section-3 {
+        width: 100%;
+        height: auto;
+        padding: 1rem 0rem;
+        background-size: 80vh auto;
+        background-position: top;
+    }
+    
+    .text-box-section-3 {
+        max-width: 90%;        
+        transform: translateX(0%);
+    }
+    
+    .text-box-section-3 h2 {
+        font-size: 2.4rem;
+        line-height: 1;
+        margin: 1rem 0rem;
+    }
+    
+    .text-box-section-3 p {
+        font-size: 1rem;
+        line-height: 1.4;
+        margin: 1rem 0rem;
+    }
+    
+    .text-box-section-3 button {
+        padding: 10px 20px;
+        border-width: 2px;
+        font-size: 1rem;
+    }
+
+    .section-4 {
+        height: 60vh;
+    }
+    
+    .section-4 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .section-5 {
+        height: auto;
+        min-height: 50vh;
+    }
+
+    .column-right-section-5 {
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+    }
+    
+    .img-section-5 {
+        max-width: 100%;
+        transform: translateY(0%);
+    }
+    
+    .column-left-section-5 {
+        width: 100%;
+        height: auto;
+        padding: 1rem 0rem;
+        background-size: 80vh auto;
+        background-position: top;
+    }
+    
+    .text-box-section-5 {
+        max-width: 90%;        
+        transform: translateX(0%);
+    }
+    
+    .text-box-section-5 h2 {
+        font-size: 2.4rem;
+        line-height: 1;
+        margin: 1rem 0rem;
+    }
+    
+    .text-box-section-5 p {
+        font-size: 1rem;
+        line-height: 1.4;
+        margin: 1rem 0rem;
+    }
+    
+    .text-box-section-5 button {
         padding: 10px 20px;
         border-width: 2px;
         font-size: 1rem;
