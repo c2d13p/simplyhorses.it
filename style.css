@@ -8,41 +8,79 @@ html, body {
     overflow-x: hidden;
 }
 
-.header {
-    height: 44vh;
-    background-image: url('home/white-horse-icons.png');
-    background-repeat: repeat;
-    position: relative;
+#header {
+    height: 40vh;
+    background-image: url('icons/white-horses.png');
     display: flex;
     justify-content: center;
     align-items: center;
-    box-sizing: border-box;
 }
 
-.logo {
+#header img {
     max-width: 50%;
     max-height: 72%;
     object-fit: contain;
 }
 
-.section-1 {
+.text-box {
+    z-index: 1;
+}
+
+.two-columns-section {
+    display: flex;
+    flex-wrap: wrap;
+    height: 80vh;
+}
+
+.column {
+    position: relative;
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.text-box h2 {
+    font-size: 4.4rem;
+    line-height: 1;
+    font-weight: 700;
+    margin: 1.4rem 0rem;
+}
+
+.text-box p {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    font-weight: 500;
+    margin: 1.4rem 0rem;
+}
+
+#section-1 {
+    display: flex;
     height: 80vh;
+    justify-content: center;
+    align-items: center;
     position: relative;
     padding: 2rem 0rem;
 }
 
-.text-box-section-1 {
+#section-1 .text-box {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    z-index: 1;
 }
 
-.text-box-section-1 p {
+#section-1 .text-box h1 {
     color: white;
     text-align: left;
     font-size: 4.5em;
@@ -53,246 +91,134 @@ html, body {
     transform: translateX(10%);
 }
 
-.img-section-1 {
+#section-1 img {
     max-height: 90%;
     max-width: 90%;
-    position: relative;
     z-index: 0;
 }
 
-.section-2 {
-    display: flex;
-    flex-wrap: wrap;
-    height: 80vh;
-}
-
-.column {
-    position: relative;
-    background-size: cover;
-    background-position: center;
-}
-
-.column-left-section-2 {
+#section-2 .column-left {
     width: 45%;
-    background-image: url('home/white-horse-vertical-icons.png');
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-image: url('icons/white-vertical-horses.png');
 }
 
-.img-section-2 {
+#section-2 img {
     max-width: 75%;
     transform: translateX(10%);
 }
 
-.column-right-section-2 {
+#section-2 .column-right {
     width: 55%;
-    background-image: url('home/background-img-section-2.jpg');
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-image: url('/img/home/background-section-2.jpg');
 }
 
-.text-box-section-2 {
-    max-width: 80%;
+#section-2 .text-box {
     text-align: left;
-    transform: translateX(-50%);
+    transform: translateX(-20%);
     color: #ffffff;
 }
 
-.text-box-section-2 h2 {
-    font-size: 4.4rem;
-    line-height: 1;
-    font-weight: 700;
-    margin: 1.4rem 0rem;
-}
-
-.text-box-section-2 p {
-    font-size: 1.4rem;
-    line-height: 1.4;
-    font-weight: 500;
-    margin: 1.4rem 0rem;
-}
-
-.text-box-section-2 button {
-    padding: 10px 20px;
-    background-color: transparent;
-    border: 2px solid #ffffff;
+#section-2 button {
+    border-color: #ffffff;
     color: #ffffff;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: 600;
 }
 
-.text-box-section-2 button:hover {
+#section-2 button:hover {
     background-color: #ffffff;
     color: #1d4c60;
 }
 
-.section-3 {
-    display: flex;
-    flex-wrap: wrap;
-    height: 80vh;
-}
-
-.column {
-    position: relative;
-    background-size: cover;
-    background-position: center;
-}
-
-.column-left-section-3 {
+#section-3 .column-left {
     width: 55%;
     background-color: #1d4c60;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.img-section-3 {
+#section-3 img {
     max-width: 80%;
     transform: translateX(5%);
 }
 
-.column-right-section-3 {
+#section-3 .column-right {
     width: 45%;
-    background-color: #E7B4B5;
-    background-image: url('home/white-horse-icons.png');
+    background-image: url('icons/white-horses.png');
     background-size: 130vh auto;
     background-position: top;
     background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.text-box-section-3 {
-    max-width: 80%;
+#section-3 .text-box {
     text-align: left;
-    transform: translateX(-50%);
+    transform: translateX(-20%);
     color: #1d4c60;
 }
 
-.text-box-section-3 h2 {
-    font-size: 4.4rem;
-    line-height: 1;
-    font-weight: 700;
-    margin: 1.4rem 0rem;
-}
-
-.text-box-section-3 p {
-    font-size: 1.4rem;
-    line-height: 1.4;
-    font-weight: 500;
-    margin: 1.4rem 0rem;
-}
-
-.text-box-section-3 button {
-    padding: 10px 20px;
-    background-color: transparent;
-    border: 2px solid #1d4c60;
+#section-3 button {
+    border-color: #1d4c60;
     color: #1d4c60;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: 600;
 }
 
-.text-box-section-3 button:hover {
+#section-3 button:hover {
     background-color: #1d4c60;
     color: #ffffff;
 }
 
-.section-4 {
+#section-4 {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 90vh;
 }
 
-.section-4 img {
+#section-4 img {
     width: 70%;
     height: 100%;
     object-fit: cover;
     display: block;
 }
 
-.section-5 {
+#section-5 {
     display: flex;
     flex-wrap: wrap;
     min-height: 60vh;
     margin-bottom: 0;
 }
 
-.column {
-    position: relative;
-    background-size: cover;
-    background-position: center;
-}
-
-.column-right-section-5 {
+#section-5 .column-right {
     width: 45%;
     background-color: #1d4c60;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.img-section-5 {
+#section-5 img {
     max-width: 85%;
     max-height: 85%;
     padding: 3rem;
-    transform: translateX(0%);
 }
 
-.column-left-section-5 {
+#section-5 .column-left {
     width: 55%;
-    background-color: #E7B4B5;
-    background-image: url('home/white-horse-icons.png');
+    background-image: url('icons/white-horses.png');
     background-size: 150vh auto;
     background-position: top;
     background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.text-box-section-5 {
-    max-width: 80%;
+#section-5 .text-box {
     text-align: left;
-    transform: translateX(-50%);
+    transform: translateX(-20%);
     color: #1d4c60;
 }
 
-.text-box-section-5 h2 {
-    font-size: 4.4rem;
-    line-height: 1;
-    font-weight: 700;
-    margin: 1.4rem 0rem;
-}
-
-.text-box-section-5 p {
-    font-size: 1.4rem;
-    line-height: 1.4;
-    font-weight: 500;
-    margin: 1.4rem 0rem;
-}
-
-.text-box-section-5 button {
-    padding: 10px 20px;
-    background-color: transparent;
-    border: 2px solid #1d4c60;
+#section-5 button {
+    border-color: #1d4c60;
     color: #1d4c60;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: 600;
 }
 
-.text-box-section-5 button:hover {
+#section-5 button:hover {
     background-color: #1d4c60;
     color: #ffffff;
 }
 
-.footer {
+#footer {
     height: 20vh;
     display: flex;
     flex-direction: column;
@@ -302,7 +228,7 @@ html, body {
     background-color: #1d4c60;
 }
 
-.footer p {
+#footer p {
     font-size: 1.6em;
     font-weight: 500;
     color: white;
@@ -327,23 +253,48 @@ html, body {
 }
 
 @media only screen and (max-width: 1023px) {
-    .header {
+    #header {
         height: 26vh;
         background-size: 180vh auto;
     }
 
-    .logo {
+    #header img {
         max-width: 100%;
         max-height: 80%;
-        background-size: 10px;
     }
 
-    .section-1 {
+    .two-columns-section {
+        height: auto;
+        min-height: 80vh;
+    }
+
+    .text-box h2 {
+        font-size: 2.8rem;
+        line-height: 1;
+        margin: 1.4rem 0rem;
+    }
+    
+    .text-box p {
+        font-size: 1.2rem;
+        line-height: 1.4;
+        margin: 1.4rem 0rem;
+    }
+    
+    button {
+        font-size: 1.2rem;
+    }
+
+    #section-1 {
         height: 70vh;
         padding: 1.4rem 0rem;
     }
-    
-    .text-box-section-1 p {
+
+    #section-1 img {
+        max-height: 80%;
+        max-width: 80%;
+    }
+
+    #section-1 .text-box h1 {
         font-size: 2.6em;
         font-weight: 700;
         border-width: 6px;
@@ -351,72 +302,39 @@ html, body {
         transform: translateX(20%);
     }
 
-    .img-section-1 {
-        max-height: 80%;
-        max-width: 80%;
-    }
-
-    .section-2 {
-        height: auto;
-        min-height: 80vh;
-    }
-
-    .column-left-section-2 {
+    #section-2 .column-left {
         width: 100%;
         height: auto;
         padding: 2rem 0rem;
     }
     
-    .img-section-2 {
+    #section-2 img {
         max-width: 80%;
         transform: translateY(0%);
     }
     
-    .column-right-section-2 {
+    #section-2 .column-right {
         width: 100%;
         height: auto;
         padding: 6rem 0rem;
     }
     
-    .text-box-section-2 {
-        max-width: 90%;        
+    #section-2 .text-box {      
         transform: translateX(-40%);
     }
-    
-    .text-box-section-2 h2 {
-        font-size: 2.8rem;
-        line-height: 1;
-        margin: 1.4rem 0rem;
-    }
-    
-    .text-box-section-2 p {
-        font-size: 1.2rem;
-        line-height: 1.4;
-        margin: 1.4rem 0rem;
-    }
-    
-    .text-box-section-2 button {
-        border-width: 2px;
-        font-size: 1.2em;
-    }
 
-    .section-3 {
-        height: auto;
-        min-height: 80vh;
-    }
-
-    .column-left-section-3 {
+    #section-3 .column-left {
         width: 100%;
         height: auto;
         padding: 2rem 0rem;
     }
     
-    .img-section-3 {
+    #section-3 img {
         max-width: 80%;
         transform: translateY(0%);
     }
     
-    .column-right-section-3 {
+    #section-3 .column-right {
         width: 100%;
         height: auto;
         padding: 4rem 0rem;
@@ -424,42 +342,52 @@ html, body {
         background-position: top;
     }
     
-    .text-box-section-3 {
-        max-width: 90%;        
+    #section-3 .text-box {    
         transform: translateX(0%);
     }
-    
-    .text-box-section-3 h2 {
-        font-size: 2.8rem;
-        line-height: 1;
-        margin: 1.4rem 0rem;
-    }
-    
-    .text-box-section-3 p {
-        font-size: 1.2rem;
-        line-height: 1.4;
-        margin: 1.4rem 0rem;
-    }
-    
-    .text-box-section-3 button {
-        border-width: 2px;
-        font-size: 1.2em;
-    }
 
-    .section-4 {
+    #section-4 {
         height: 80vh;
     }
     
-    .section-4 img {
+    #section-4 img {
         width: 100%;
         height: 100%;
     }
 
-    .footer {
+    #section-5 {
+        height: auto;
+        min-height: 70vh;
+    }
+
+    #section-5 .column-right  {
+        width: 100%;
+        height: auto;
+        padding: 2rem 0rem;
+    }
+    
+    #section-5 img {
+        max-width: 80%;
+        transform: translateY(0%);
+    }
+    
+    #section-5 .column-left {
+        width: 100%;
+        height: auto;
+        padding: 4rem 0rem;
+        background-size: 120vh auto;
+        background-position: top;
+    }
+    
+    #section-5 .text-box {    
+        transform: translateX(0%);
+    }
+
+    #footer {
         height: 18vh;
     }
     
-    .footer p {
+    #footer p {
         font-size: 1.4em;
     }
     
@@ -475,25 +403,44 @@ html, body {
 }
 
 @media only screen and (max-width: 767px) {
-    .header {
+    #header {
         height: 14vh;
         background-size: 90vh auto;
     }
 
-    .logo {
+    #header img {
         max-width: 60%;
         max-height: 100%;
-        background-size: 10px;
     }
 
-    .section-1 {
+    .two-columns-section {
+        height: auto;
+        min-height: 50vh;
+    }
+
+    .text-box h2 {
+        font-size: 2.4rem;
+        line-height: 1;
+        margin: 1rem 0rem;
+    }
+    
+    .text-box p {
+        font-size: 1rem;
+        line-height: 1.4;
+        margin: 1rem 0rem;
+    }
+    
+    button {
+        font-size: 1rem;
+    }
+
+    #section-1 {
         flex-direction: column;
-        position: relative;
         height: 50vh;
         padding: 0; 
     }
 
-    .img-section-1 {
+    #section-1 img {
         position: absolute;
         top: 0;
         left: 0;
@@ -504,86 +451,55 @@ html, body {
         object-fit: cover;
     }
 
-    .text-box-section-1 {
+    #section-1 .text-box {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
 
-    .text-box-section-1 p {
+    #section-1 .text-box h1 {
         font-size: 1.8em;
         padding: 2.2rem;
         transform: none;
         border-width: 4px;
         text-align: center;
         line-height: 1.6;
-        width: 100%;
-        box-sizing: border-box;
     }
 
-    .section-2 {
-        height: auto;
-        min-height: 50vh;
-    }
-
-    .column-left-section-2 {
+    #section-2 .column-left {
         width: 100%;
         height: auto;
         padding: 2rem;
     }
     
-    .img-section-2 {
+    #section-2 img {
         max-width: 100%;
         transform: translateY(5%);
     }
     
-    .column-right-section-2 {
+    #section-2 .column-right {
         width: 100%;
         height: auto;
         padding: 2rem 0rem;
     }
     
-    .text-box-section-2 {
-        max-width: 90%;        
+    #section-2 .text-box {   
         transform: translateX(0%);
     }
-    
-    .text-box-section-2 h2 {
-        font-size: 2.4rem;
-        line-height: 1;
-        margin: 1rem 0rem;
-    }
-    
-    .text-box-section-2 p {
-        font-size: 1rem;
-        line-height: 1.4;
-        margin: 1rem 0rem;
-    }
-    
-    .text-box-section-2 button {
-        padding: 10px 20px;
-        border-width: 2px;
-        font-size: 1rem;
-    }
 
-    .section-3 {
-        height: auto;
-        min-height: 50vh;
-    }
-
-    .column-left-section-3 {
+    #section-3 .column-left {
         width: 100%;
         height: auto;
         padding: 1rem;
     }
     
-    .img-section-3 {
+    #section-3 img {
         max-width: 100%;
         transform: translateY(0%);
     }
     
-    .column-right-section-3 {
+    #section-3 .column-right {
         width: 100%;
         height: auto;
         padding: 1rem 0rem;
@@ -591,55 +507,35 @@ html, body {
         background-position: top;
     }
     
-    .text-box-section-3 {
-        max-width: 90%;        
+    #section-3 .text-box {  
         transform: translateX(0%);
     }
-    
-    .text-box-section-3 h2 {
-        font-size: 2.4rem;
-        line-height: 1;
-        margin: 1rem 0rem;
-    }
-    
-    .text-box-section-3 p {
-        font-size: 1rem;
-        line-height: 1.4;
-        margin: 1rem 0rem;
-    }
-    
-    .text-box-section-3 button {
-        padding: 10px 20px;
-        border-width: 2px;
-        font-size: 1rem;
-    }
 
-    .section-4 {
+    #section-4 {
         height: 60vh;
     }
     
-    .section-4 img {
+    #section-4 img {
         width: 100%;
         height: 100%;
     }
 
-    .section-5 {
+    #section-5 {
         height: auto;
         min-height: 50vh;
     }
 
-    .column-right-section-5 {
+    #section-5 .column-right {
         width: 100%;
         height: auto;
         padding: 1rem;
     }
     
-    .img-section-5 {
+    #section-5 img {
         max-width: 100%;
-        transform: translateY(0%);
     }
     
-    .column-left-section-5 {
+    #section-5 .column-left {
         width: 100%;
         height: auto;
         padding: 1rem 0rem;
@@ -647,34 +543,15 @@ html, body {
         background-position: top;
     }
     
-    .text-box-section-5 {
-        max-width: 90%;        
+    #section-5 .text-box {
         transform: translateX(0%);
     }
-    
-    .text-box-section-5 h2 {
-        font-size: 2.4rem;
-        line-height: 1;
-        margin: 1rem 0rem;
-    }
-    
-    .text-box-section-5 p {
-        font-size: 1rem;
-        line-height: 1.4;
-        margin: 1rem 0rem;
-    }
-    
-    .text-box-section-5 button {
-        padding: 10px 20px;
-        border-width: 2px;
-        font-size: 1rem;
-    }
 
-    .footer {
+    #footer {
         height: 14vh;
     }
     
-    .footer p {
+    #footer p {
         font-size: 1em;
     }
     
