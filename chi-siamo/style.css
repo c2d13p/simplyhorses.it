@@ -27,43 +27,117 @@ html, body {
 }
 
 #section-1 {
+    width: 40%;
+    margin: 0 auto;
+    text-align: left;
+    color: #ffffff;
+}
+
+#section-1 h2 {
+    margin: 0 auto;
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+#section-2, #section-3, #section-4 {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 66%;
-    margin: 0 auto; 
-    padding: 2rem 0rem;
+    margin: 0 auto;
 }
 
-#section-1 .column-left {
-    flex: 3.4;
-    text-align: left;
+#section-3 {
+    padding: 5rem 0rem;
+}
+
+.column-text {
+    width: 50%;
+}
+
+.column-slideshow {
+    width: 50%;
+}
+
+.text-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #ffffff;
-    padding: 3rem;
 }
 
-#section-1 h2 {
-    font-size: 3em;
+#section-3 .text-box {
+    padding-left: 1rem;
+}
+
+.text-box .column-1, .column-2 {
+    text-align: left;
+    font-size: 1.4em;
+}
+
+.text-box .column-1 {
+    width: 30%;
     font-weight: 700;
-    line-height: 1;
-    margin: 0;
-    padding-bottom: 2rem;
 }
 
-#section-1 p {
-    font-size: 1.2em;
-    font-weight: 500;
-    line-height: 1.6;
-    margin: 0;
+#section-4 .text-box .column-1 {
+    width: 40%;
 }
 
-#section-1 .column-right {
-    flex: 6.6;
+.text-box .column-2 {
+    width: 70%;
+    font-weight: 400;
 }
 
-#section-1 img {
+#section-3 .text-box .column-2 {
+    width: 60%;
+}
+
+.slideshow {
+    position: relative;
     width: 100%;
+    height: 46vh;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#section-2 .slide {
+    box-shadow: 30px -30px #1d4c60;
+}
+
+#section-3 .slide {
+    box-shadow: -30px -30px #1d4c60;
+}
+
+#section-4 .slide {
+    box-shadow: 30px 30px #1d4c60;
+}
+
+.slide.active {
+    opacity: 1;
     display: block;
+}
+
+#section-5 p {
+    color: #ffffff;
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding-top: 5rem;
+    text-align: justify;
+    font-size: 1.2em;
+    line-height: 1.6;
 }
 
 #footer {
@@ -78,13 +152,13 @@ html, body {
     display: flex;
     justify-content: center;
     gap: 40px;
-    margin-top: 1rem;
 }
 
 .footer-icons a img {
     width: 50px;
     height: 50px;
     transition: transform 0.3s ease;
+    display: block;
 }
 
 .footer-icons a img:hover {
@@ -101,38 +175,63 @@ html, body {
     }
 
     #section-1 {
-        flex-direction: column-reverse;
-        width: 90%;
+        width: 80%;
     }
 
-    #section-1 .column-left {
-        padding: 2rem;
-    }
-    
     #section-1 h2 {
-        font-size: 3em;
-        font-weight: 700;
+        font-size: 2.8em;
         line-height: 1.2;
-        padding-bottom: 1.4rem;
+        padding: 1rem 0rem;
+    }
+
+    #section-2, #section-3, #section-4 {
+        width: 90%;
     }
     
-    #section-1 p {
-        font-size: 1.2em;
-        font-weight: 500;
-        line-height: 1.8;
+    #section-3 {
+        padding: 3rem 0rem;
+    }
+
+    .text-box .column-1, .column-2 {
+        font-size: 1em;
+    }
+
+    .text-box .column-1 {
+        width: 40%;
+    }
+
+    .text-box .column-2 {
+        width: 60%;
+    }
+
+    #section-4 .text-box .column-2 {
+        width: 70%;
+    }
+
+    #section-2 .slide {
+        box-shadow: 20px -20px #1d4c60;
     }
     
-    #section-1 img {
-        width: 100%;
-        display: block;
+    #section-3 .slide {
+        box-shadow: -20px -20px #1d4c60;
     }
     
+    #section-4 .slide {
+        box-shadow: 20px 20px #1d4c60;
+    }
+    
+    #section-5 p {
+        width: 76%;
+        padding-top: 4rem;
+    }
+
     #footer {
         height: 10vh;
+        margin: 1.6rem 0rem;
     }
     
     .footer-icons {
-        gap: 50px;
+        gap: 60px;
     }
     
     .footer-icons a img {
@@ -152,34 +251,93 @@ html, body {
     }
 
     #section-1 {
-        flex-direction: column-reverse;
-        width: 90%;
-    }
-
-    #section-1 .column-left {
-        padding: 1rem;
+        width: 80%;
+        padding-top: 1rem;
     }
     
     #section-1 h2 {
-        font-size: 2.6em;
+        font-size: 2.2em;
         font-weight: 700;
-        line-height: 1.2;
-        padding-bottom: 1.4rem;
+        line-height: 1;
+    }
+
+    #section-2, #section-3, #section-4 {
+        width: 90%;
+        flex-direction: column;
+        padding: 1rem 0rem;
+    }
+
+    #section-3 {
+        flex-direction: column-reverse;
     }
     
-    #section-1 p {
-        font-size: 1em;
-        font-weight: 500;
-        line-height: 1.6;
-    }
-    
-    #section-1 img {
+    .column-text {
         width: 100%;
-        display: block;
     }
     
+    .column-slideshow {
+        width: 100%;
+    }
+
+    .text-box {
+        padding-bottom: 0.6rem;
+    }
+
+    #section-3 .text-box {
+        padding-left: 0rem;
+    }
+
+    .text-box .column-1, .column-2 {
+        font-size: 0.8em;
+    }
+    
+    .text-box .column-1 {
+        width: 35%;
+    }
+    
+    #section-4 .text-box .column-1 {
+        width: 35%;
+    }
+    
+    .text-box .column-2 {
+        width: 65%;
+    }
+
+    #section-3 .text-box .column-2 {
+        width: 65%;
+    }
+
+    #section-4 .text-box .column-2 {
+        padding-left: 0.4rem;
+    }
+
+    .slideshow {
+        height: 38vh;
+    }
+
+    #section-2 .slide {
+        box-shadow: 10px 10px #1d4c60;
+    }
+    
+    #section-3 .slide {
+        box-shadow: -10px -10px #1d4c60;
+    }
+    
+    #section-4 .slide {
+        box-shadow: 10px 10px #1d4c60;
+    }
+
+    #section-5 p {
+        width: 86%;
+        margin-top: 30px;
+        padding-top: 0rem;
+        text-align: justify;
+        font-size: 1em;
+    }
+
     #footer {
         height: 10vh;
+        margin: 0.6rem 0rem;
     }
     
     .footer-icons {
@@ -187,7 +345,7 @@ html, body {
     }
     
     .footer-icons a img {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
     }
 }
