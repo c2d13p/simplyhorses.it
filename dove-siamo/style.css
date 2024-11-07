@@ -9,7 +9,8 @@ html, body {
 }
 
 #header {
-    height: 36vh;
+    height: 38vh;
+    background-image: url('../icons/white-horses.png');
 }
 
 #header a {
@@ -21,47 +22,65 @@ html, body {
 }
 
 #header img {
-    max-width: 50%;
-    max-height: 80%;
+    max-height: 90%;
     object-fit: contain;
 }
 
-#section-1 {
+#title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#title h2 {
+    font-size: 4.6em;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1;
+    margin: 0 auto;
+    padding: 3rem 0rem;
+}
+
+#section-1, #section-2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 66%;
+    width: 80%;
     margin: 0 auto; 
+}
+
+#section-2 {
     padding: 2rem 0rem;
 }
 
-#section-1 .column-left {
-    flex: 3.4;
-    text-align: left;
+#section-1 .column-left, #section-2 .column-right {
+    flex: 5;
+    text-align: justify;
     color: #ffffff;
-    padding: 3rem;
+    padding: 0rem 3rem;
 }
 
-#section-1 h2 {
-    font-size: 3em;
-    font-weight: 700;
-    line-height: 1;
-    margin: 0;
-    padding-bottom: 2rem;
-}
-
-#section-1 p {
+#section-1 p, #section-2 p {
     font-size: 1.2em;
     font-weight: 500;
     line-height: 1.6;
     margin: 0;
 }
 
-#section-1 .column-right {
-    flex: 6.6;
+#section-1 .column-right, #section-2 .column-left {
+    flex: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#section-1 img {
+#section-2 .column-left {
+    margin-left: 3rem;
+}
+
+#section-2 img {
     width: 100%;
     display: block;
 }
