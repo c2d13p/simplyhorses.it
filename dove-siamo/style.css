@@ -70,9 +70,6 @@ html, body {
 
 #section-1 .column-right, #section-2 .column-left {
     flex: 5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 #section-2 .column-left {
