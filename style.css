@@ -10,7 +10,7 @@ html, body {
 
 #header {
     height: 38vh;
-    background-image: url('icons/white-horses.png');
+    background-image: linear-gradient(rgba(231, 180, 181, 0.6), rgba(231, 180, 181, 0.6)), url('../icons/white-horses.png');
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,7 +45,7 @@ button {
     background-color: transparent;
     border: 2px solid;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: 600;
 }
 
@@ -57,7 +57,7 @@ button {
 }
 
 .text-box p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1.4;
     font-weight: 500;
     margin: 1.4rem 0rem;
@@ -98,7 +98,7 @@ button {
 
 #section-2 .column-left {
     width: 45%;
-    background-image: url('icons/white-vertical-horses.png');
+    background-image: linear-gradient(rgba(231, 180, 181, 0.6), rgba(231, 180, 181, 0.6)), url('../icons/white-vertical-horses.png');
 }
 
 #section-2 img {
@@ -139,7 +139,7 @@ button {
 
 #section-3 .column-right {
     width: 45%;
-    background-image: url('icons/white-horses.png');
+    background-image: linear-gradient(rgba(231, 180, 181, 0.6), rgba(231, 180, 181, 0.6)), url('../icons/white-horses.png');
     background-size: 130vh auto;
     background-position: top;
     background-repeat: no-repeat;
@@ -195,7 +195,7 @@ button {
 
 #section-5 .column-left {
     width: 55%;
-    background-image: url('icons/white-horses.png');
+    background-image: linear-gradient(rgba(231, 180, 181, 0.6), rgba(231, 180, 181, 0.6)), url('../icons/white-horses.png');
     background-size: 150vh auto;
     background-position: top;
     background-repeat: no-repeat;
@@ -403,18 +403,21 @@ button {
 
 @media only screen and (max-width: 767px) {
     #header {
-        height: 14vh;
+        height: 18vh;
         background-size: 90vh auto;
     }
 
     #header img {
-        max-width: 60%;
-        max-height: 100%;
+        max-height: 80%;
     }
 
     .two-columns-section {
         height: auto;
-        min-height: 50vh;
+     
+    }
+
+    button {
+        font-size: 1rem;
     }
 
     .text-box h2 {
@@ -428,15 +431,25 @@ button {
         line-height: 1.4;
         margin: 1rem 0rem;
     }
-    
-    button {
-        font-size: 1rem;
-    }
 
     #section-1 {
-        flex-direction: column;
         height: 50vh;
-        padding: 0; 
+    }
+
+    #section-1 .text-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #section-1 .text-box h1 {
+        font-size: 2em;
+        padding: 2.2rem;
+        transform: none;
+        border-width: 4px;
+        text-align: center;
+        line-height: 1.6;
     }
 
     #section-1 img {
@@ -450,37 +463,18 @@ button {
         object-fit: cover;
     }
 
-    #section-1 .text-box {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    #section-1 .text-box h1 {
-        font-size: 1.8em;
-        padding: 2.2rem;
-        transform: none;
-        border-width: 4px;
-        text-align: center;
-        line-height: 1.6;
-    }
-
     #section-2 .column-left {
         width: 100%;
-        height: auto;
-        padding: 2rem;
     }
     
     #section-2 img {
-        max-width: 100%;
-        transform: translateY(5%);
+        max-width: 84%;
+        transform: translateY(0%);
     }
     
     #section-2 .column-right {
         width: 100%;
-        height: auto;
-        padding: 2rem 0rem;
+        padding: 4rem 0rem;
     }
     
     #section-2 .text-box {   
@@ -489,8 +483,7 @@ button {
 
     #section-3 .column-left {
         width: 100%;
-        height: auto;
-        padding: 1rem;
+        padding: 2rem 1rem;
     }
     
     #section-3 img {
@@ -500,10 +493,8 @@ button {
     
     #section-3 .column-right {
         width: 100%;
-        height: auto;
-        padding: 1rem 0rem;
-        background-size: 80vh auto;
-        background-position: top;
+        padding: 3rem 1.4rem;
+        background-size: 90vh auto;
     }
     
     #section-3 .text-box {  
@@ -511,23 +502,16 @@ button {
     }
 
     #section-4 {
-        height: 60vh;
+        height: 70vh;
     }
     
     #section-4 img {
         width: 100%;
-        height: 100%;
-    }
-
-    #section-5 {
-        height: auto;
-        min-height: 50vh;
     }
 
     #section-5 .column-right {
         width: 100%;
-        height: auto;
-        padding: 1rem;
+        padding: 0rem 1rem;
     }
     
     #section-5 img {
@@ -536,10 +520,8 @@ button {
     
     #section-5 .column-left {
         width: 100%;
-        height: auto;
-        padding: 1rem 0rem;
-        background-size: 80vh auto;
-        background-position: top;
+        padding: 3rem 0rem;
+        background-size: 90vh auto;
     }
     
     #section-5 .text-box {
@@ -552,15 +534,16 @@ button {
     
     #footer p {
         font-size: 1em;
+        padding: 0rem 1rem;
     }
     
     .footer-icons {
-        gap: 20px;
+        gap: 30px;
         margin-top: 0.4rem;
     }
     
     .footer-icons a img {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
     }
 }
