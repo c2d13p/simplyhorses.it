@@ -112,7 +112,67 @@ html, body {
 }
 
 @media only screen and (max-width: 1023px) {
+    #header {
+        height: 26vh;
+        background-size: 180vh auto;
+    }
 
+    #header img {
+        max-height: 94%;
+    }
+
+    #title h2 {
+        font-size: 4.6em;
+        padding: 3rem 0rem;
+    }
+
+    #section-1, #section-2 {
+        flex-direction: column;
+        width: 86%;
+    }
+    
+    #section-2 {
+        flex-direction: column-reverse;
+    }
+
+    #section-1 .column-left {
+        padding: 1rem;
+    }
+
+    #section-2 .column-right {
+        padding: 1rem 1rem 1rem 1rem;
+    }
+    
+    #section-1 p, #section-2 p{
+        font-size: 1.4em;
+    }
+
+    .map {
+        width: 600px;
+        height: 500px;
+    }
+
+    #section-1 .column-right {
+        padding-top: 2rem;
+    }
+
+    #section-2 .column-left {
+        margin-left: 0rem;
+        padding: 1rem;
+    }
+    
+    #section-2 img {
+        width: 100%;
+        display: block;
+    }
+    
+    #footer {
+        height: 10vh;
+    }
+    
+    .footer-icons {
+        gap: 36px;
+    }
 }
 
 @media only screen and (max-width: 767px) {

@@ -165,7 +165,91 @@ html, body {
 }
 
 @media only screen and (max-width: 1023px) {
+    #header {
+        height: 26vh;
+        background-size: 180vh auto;
+    }
+
+    #header img {
+        max-height: 94%;
+    }
+
+    #title h2 {
+        font-size: 4.6em;
+        padding: 3rem 0rem;
+    }
+
+    #section-1 {
+        width: 86%;
+    }
     
+    #section-1 p {
+        font-size: 1.4em;
+        margin-bottom: 0px;
+        padding: 1rem;
+    }
+
+    #section-2, #section-3, #section-4 {
+        width: 86%;
+        flex-direction: column;
+        padding: 1.4rem 0rem;
+    }
+
+    #section-3 {
+        flex-direction: column-reverse;
+    }
+    
+    .column-text {
+        width: 100%;
+    }
+    
+    .column-slideshow {
+        width: 100%;
+    }
+
+    .text-box {
+        padding-bottom: 1rem;
+    }
+
+    #section-3 .text-box {
+        padding-left: 0rem;
+    }
+
+    .text-box .column-1, .text-box .column-2 {
+        font-size: 1.4em;
+    }
+    
+    .text-box .column-1 {
+        width: 40%;
+    }
+    
+    .text-box .column-2 {
+        width: 60%;
+    }
+
+    .slideshow {
+        height: 44vh;
+    }
+
+    #section-2 .slide {
+        box-shadow: 18px 18px #1d4c60;
+    }
+    
+    #section-3 .slide {
+        box-shadow: -18px -18px #1d4c60;
+    }
+    
+    #section-4 .slide {
+        box-shadow: 18px 18px #1d4c60;
+    }
+
+    #footer {
+        height: 10vh;
+    }
+    
+    .footer-icons {
+        gap: 36px;
+    }
 }
 
 @media only screen and (max-width: 767px) {
